@@ -1,1 +1,31 @@
+ASP.NET Core MVC is used for creating and hosting web applications which can be used for Windows, Mac, Linux or any other platform.
+
+Compatible with the latest HTML standard and front-end frameworks such as Angular, React and more.
+
+IDE
+Microsoft provides several tools for complex web actions on the server-side, such as database operations, email delivery, complex calculations and graphics rendering.
+- Microsoft Visual Studio
+- Microsoft Visual Studio Code
+
+Hosting Technologies
+- Microsoft Internet Information Services
+- Microsoft Azure
+
+Database
+- SQL Server
+- Azure SQL Database
+
+Code Execution Technologies
+- On the web server: This code has full access to the web server and any databases attached to it.
+- On the user's web browser: Run's in the client's browser and responds quickly to user actions but is 
+more limited to what it can accomplish without interacting with the web server.
+
+ASP.NET is a server-side web development framework that allows you to build server-based web applications. ASP.NET Core is a leaner and more modular version of 
+ASP.NET.
+MVC programming model is part of ASP.NET
+
+Model-View-Controller is a programming model used to build sites.
+Model defines a set of classes that represents the object types that the web application manages.
+Controller is a class that handles user interactions, creates and modifies model classes and selects appropriate views.
+View is a component built into the web page that make up the user interface.
 
