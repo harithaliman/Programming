@@ -29,3 +29,24 @@ Model defines a set of classes that represents the object types that the web app
 Controller is a class that handles user interactions, creates and modifies model classes and selects appropriate views.
 View is a component built into the web page that make up the user interface.
 
+
+Larguages and Libraries used in ASP.NET
+JavaScript
+- Scripting language that has a syntax similar to C#. The script engine iwll interpret the code at run time so the browser can run the code.
+
+jQuery
+One of the most popular JavaScript libraries. It provides elegant functions for interacting with the HTML elements on your page and with CSS styles.
+- jQuery handles browser differences for you.
+
+AJAX
+- Asynchronous Javascript and XML is a technology that enables browsers to communicate with web servers asynchronously by using the
+XmlHttpRequest object without refreshing the page.
+
+Angular
+- Front-end framework that allows you to build web applications and solve common development challenges.
+- Written entirely in TypeScript and is a superset of JavaScript that was created by Microsoft
+-
+
+React
+- JS library dedicated to building user interfaces. Making interactive UI and designing views while speeding ut the dev cycle.
+- React Native is a framework that is based on React and JS and allows developers to create high performing mobile applications.
