@@ -1,0 +1,68 @@
+Every ASP.NET Core app has a Startup class. It is run within thet program.cs file.
+
+It is used for configuring middleware, which is performed in the Configure method
+The ConfigureServices is used for configure services.
+
+ConfigureServices will be called first if present, then Configure method (which may have dependencies on the services that were declared in ConfigureServices. 
+
+Startup Class
+
+public class Startup
+{
+    public void Configure(IApplicationBuilder app)
+    {
+        app.Run(async (context) =>
+        {
+            await context.Response.WriteAsync("Hello World!");
+        });
+    }
+}
+
+****For this class, the string Hello World! will always display in the browser, no matter which relative URL the user requests.
+
+
+
+The ConfigureServices Method
+
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddSingleton<IService, Service>();
+    }
+  
+    public void Configure(IApplicationBuilder app)
+    {
+        app.Run(async (context) =>
+        {
+            await context.Response.WriteAsync("Hello World!");
+        });
+    }
+}
+
+
+The Configure Method
+The Configure method is where the middleware pipeline can be defined. The Configure method supports Dependency Injection,
+allowing us to inject any services that have been set up and use them isnide the tmiddle wawre logic.
+
+public class Startup
+{
+    public void ConfigureServices(IServiceCollection services)
+    {
+        services.AddSingleton<IService, Service>();
+    }
+ 
+    public void Configure(IApplicationBuilder app, IService service)
+    {
+        app.Use(async (context, next) =>
+        {
+            service.DoSomething();
+            await next.Invoke();
+        });
+ 
+        app.Run(async (context) =>
+        {
+            await context.Response.WriteAsync("Hello World!");
+        });
+    }
+}
