@@ -1,0 +1,39 @@
+A controller is a class that usually derives from the Controller base class. 
+They contain methods, known as actions, which respond to user requests, process the requests and return the results to the response stream.
+
+A simple model class
+
+public class SimpleModel
+{
+    public string Value { get; set; }
+}
+
+A controller that passes a model to a view
+
+public class HomeController : Controller
+{
+    public IActionResult Index()
+    {
+        SimpleModel model = new SimpleModel() { Value = "My Value" };
+        return View(model);
+    }
+}
+
+A view that uses a model
+
+@model MyWebApplication.Models.SimpleModel
+ 
+@{
+    Layout = null;
+}
+ 
+<!DOCTYPE html>
+ 
+<html>
+<head>
+    <title>Index</title>
+</head>
+<body>
+    @Model.Value
+</body>
+</html>
