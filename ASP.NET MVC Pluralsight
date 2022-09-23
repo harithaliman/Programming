@@ -1,0 +1,9 @@
+ASP.NET Core is built on top of .NET Core.
+Cross Platform on Windows, Linux and Mac.
+Not tied to .NET Framework.
+
+MVC has the following advantages:
+- Architectural pattern (logical as very modular)
+- Separates the concerns and issues within different parts of the system
+- Promotes the testability and maintanability
+
