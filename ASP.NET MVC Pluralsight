@@ -8,4 +8,12 @@ MVC has the following advantages:
 - Promotes the testability and maintanability
 
 In the project, the main function is the program.cs file.
+Startup.cs class does two things:
+- Define request handling pipeline and configure all services within the application
 
+Process of Application Startup
+- Application start
+- Startup class 
+- ConfigureServices method
+- Configure method
+- Ready for requests
