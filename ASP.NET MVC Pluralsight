@@ -36,5 +36,26 @@ public bool IsPieOfTheWeek { get; set; }
 public Category Category { get; set; }
 }
 
+Controller
+- Responds to user interaction
+- Update model
+- No knowledge of data persistance
 
+Sample Controller 1
 
+public class PieController : Controller {
+public ViewResult Index()
+return View();
+}
+
+Sample Controller 2
+
+public class PieController : Controller {
+private readonly IPieRepository _pieRepository; 
+public PieController (IPieRepository pieRepository) {
+_pieRepository = pieRepository;
+}
+public ViewResult List() {
+return View ( _pieRepository.Pies);
+}
+}
