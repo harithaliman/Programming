@@ -17,3 +17,24 @@ Process of Application Startup
 - ConfigureServices method
 - Configure method
 - Ready for requests
+
+Model
+Has domain data and logic to manage data
+Simple API
+Hides details of managing the data from end user
+
+Sample Pie Model Class {
+public class Pie
+public int Id { get; set; } 
+public string Name { get; set; } 
+public string ShortDescription { get; set; } 
+public string LongDescription { get; set; } 
+public decimal Price { get; set; } 
+public string ImageUrl { get; set; } 
+public string ImageThumbnailUrl { get; set; } 
+public bool IsPieOfTheWeek { get; set; } 
+public Category Category { get; set; }
+}
+
+
+
