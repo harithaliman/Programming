@@ -7,3 +7,5 @@ MVC has the following advantages:
 - Separates the concerns and issues within different parts of the system
 - Promotes the testability and maintanability
 
+In the project, the main function is the program.cs file.
+
