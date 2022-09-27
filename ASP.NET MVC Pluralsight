@@ -72,5 +72,8 @@ EF Core
 Example
 - Based off the properties of the model class, EF Core will generate a table in the database for you.
 
+After installing EF Core correctly, you are then able to access the data in the server.
 
+Sample Query
+- _appDbContext.Pies.Include(c => c.Category).Where(p => p.IsPieOfTheWeek);
 
