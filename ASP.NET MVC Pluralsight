@@ -59,3 +59,18 @@ public ViewResult List() {
 return View ( _pieRepository.Pies);
 }
 }
+
+
+EF Core
+- Has object relational mapping
+- LINQ Support
+- Lightweight and cross platform
+- Open Source
+- Supports SQL server and other, non-relational DB 
+- Code-first based support
+
+Example
+- Based off the properties of the model class, EF Core will generate a table in the database for you.
+
+
+
