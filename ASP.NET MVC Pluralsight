@@ -77,3 +77,8 @@ After installing EF Core correctly, you are then able to access the data in the 
 Sample Query
 - _appDbContext.Pies.Include(c => c.Category).Where(p => p.IsPieOfTheWeek);
 
+View Components
+Used to show standalone components with logic behind it, e.g. in:
+- Login Panel
+- Dynamic navigation (with options depending on whether the user is logged in or not)
+- Shopping cart
