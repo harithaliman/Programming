@@ -87,3 +87,8 @@ To change navbar:
 1. Change _Layout files in views
 2. Add controller for specific page
 3. Change View file in the Views folder
+
+In the Views folder, cshtml files are stored here:
+It is used for the following.
+
+
